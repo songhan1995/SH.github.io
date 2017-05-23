@@ -38,108 +38,157 @@
 <table width="1021" height="582" border="1">
   <tbody>
     <tr>
-      <th width="1011" height="576" align="left" valign="top"  id="neirong" scope="col" ><ol start="1">
-        <li>#define NTC0 -1  </li>
-        <li>#define NTC1 262  </li>
-        <li>#define NTC2 294  </li>
-        <li>#define NTC3 330  </li>
-        <li>#define NTC4 350  </li>
-        <li>#define NTC5 393  </li>
-        <li>#define NTC6 441  </li>
-        <li>#define NTC7 495  </li>
-        <li>  </li>
-        <li>#define NTCL1 131  </li>
-        <li>#define NTCL2 147  </li>
-        <li>#define NTCL3 165  </li>
-        <li>#define NTCL4 175  </li>
-        <li>#define NTCL5 196  </li>
-        <li>#define NTCL6 221  </li>
-        <li>#define NTCL7 248     </li>
-        <li>  </li>
-        <li>#define NTCH1 525  </li>
-        <li>#define NTCH2 589  </li>
-        <li>#define NTCH3 661  </li>
-        <li>#define NTCH4 700  </li>
-        <li>#define NTCH5 786  </li>
-        <li>#define NTCH6 882  </li>
-        <li>#define NTCH7 990  </li>
-        <li>//列出全部C调的频率  </li>
-        <li>#define WHOLE 1  </li>
-        <li>#define HALF 0.5  </li>
-        <li>#define QUARTER 0.25  </li>
-        <li>#define EIGHTH 0.25  </li>
-        <li>#define SIXTEENTH 0.625  </li>
-        <li>//列出所有节拍  </li>
-        <li>int tune[]=                 //根据简谱列出各频率  </li>
-        <li>{  </li>
-        <li>  NTC5,NTC5,NTC6,  </li>
-        <li>  NTCH1,NTC6,NTC5,NTC6,NTCH1,NTC6,NTC5,  </li>
-        <li>  NTC3,NTC3,NTC3,NTC5,  </li>
-        <li>  NTC6,NTC6,NTC5,NTCH3,NTCH3,NTCH2,NTCH1,  </li>
-        <li>  NTCH2,NTCH1,NTCH2,  </li>
-        <li>  NTCH3,NTCH3,NTCH2,NTCH3,NTCH2,NTCH1,NTCH2,NTCH1,NTC6,  </li>
-        <li>  </li>
-        <li>  NTCH2,NTCH2,NTCH2,NTCH1,NTC6,NTC5,  </li>
-        <li>  NTC6,NTC5,NTC5,NTCH1,NTC6,NTC5,NTC1,NTC3,  </li>
-        <li>  NTC2,NTC1,NTC2,  </li>
-        <li>  NTC3,NTC5,NTC5,NTC3,NTCH1,NTC7,  </li>
-        <li>  NTC6,NTC5,NTC6,NTCH1,NTCH2,NTCH3,  </li>
-        <li>  </li>
-        <li>  NTCH3,NTCH2,NTCH1,NTC5,NTCH1,NTCH2,NTCH3,  </li>
-        <li>  </li>
-        <li>  NTCH2,NTC0,NTCH3,NTCH2,  </li>
-        <li>  NTCH1,NTC0,NTCH2,NTCH1,NTC6,NTC0,  </li>
-        <li>  </li>
-        <li>  NTCH2,NTC6,NTCH1,NTCH1,NTCH1,NTC6,NTC5,NTC3,  </li>
-        <li>  NTC5,  </li>
-        <li>  NTC5,NTC6,NTCH1,NTC7,NTC6,  </li>
-        <li>  NTCH3,NTCH3,NTCH3,NTCH3,NTCH2,NTCH2,NTCH1,  </li>
-        <li>  NTC6,NTCH3,NTCH2,NTCH1,NTCH2,NTCH1,NTC6,  </li>
-        <li>  NTCH1,  </li>
-        <li>};  </li>
-        <li>float durt[]=                   //根据简谱列出各节拍  </li>
-        <li>{  </li>
-        <li>0.5,0.25,0.25,  </li>
-        <li>1.5,0.5,0.5,0.25,0.25,0.5,0.5,  </li>
-        <li>1+1+1,0.5,0.25,0.25,  </li>
-        <li>1.5,0.5,0.5,0.5,0.25,0.25,0.5,  </li>
-        <li>1+1+1,0.5,0.5,  </li>
-        <li>0.5,0.5,0.5,0.25,0.25,0.5,0.25,0.25,0.5,  </li>
-        <li>0.5,0.5,0.5,0.25,0.25,1+1,  </li>
-        <li>0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,  </li>
-        <li>1+1+1,0.5,0.5,  </li>
-        <li>  </li>
-        <li>  </li>
-        <li>1.5,0.5,0.5,0.5,0.5,0.5,  </li>
-        <li>1.5,0.5,1,0.5,0.25,0.25,  </li>
-        <li>1.5,0.5,0.5,0.5,0.5,0.25,0.25,  </li>
-        <li>1+1+1,0.5,0.25,0.25,  </li>
-        <li>1,0.5,0.25,0.25,1,1,  </li>
-        <li>0.5,0.5,0.5,0.5,1,0.25,0.25,0.5,  </li>
-        <li>1+1+1+1,  </li>
-        <li>0.5,0.5,0.5,0.5,1+1,  </li>
-        <li>0.5,0.5,0.5,0.5,1.5,0.25,0.25,  </li>
-        <li>1.5,0.5,1,0.25,0.25,0.25,0.25,1+1+1+1,  </li>
-        <li>  </li>
-        <li>};  </li>
-        <li>int length;  </li>
-        <li>int tonepin=6;   //得用6号接口  </li>
-        <li>void setup()  </li>
-        <li>{  </li>
-        <li>  pinMode(tonepin,OUTPUT);  </li>
-        <li>  length=sizeof(tune)/sizeof(tune[0]);   //计算长度  </li>
-        <li>}  </li>
-        <li>void loop()  </li>
-        <li>{  </li>
-        <li>  for(int x=0;x&lt;length;x++)  </li>
-        <li>  {  </li>
-        <li>    tone(tonepin,tune[x]);  </li>
-        <li>    delay(500*durt[x]);   //这里用来根据节拍调节延时</li>
-        <li>    noTone(tonepin);  </li>
-        <li>  }  </li>
-        <li>  delay(2000);  </li>
-        <li>}  </li>
-      </ol></th>
+      <th width="1011" height="576" align="left" valign="top"  id="neirong" scope="col" ><p>音乐代码上传：</p>
+        <p>《虫儿飞》</p>
+        <ol start="1">
+          <li>/*------------音符对应蜂鸣器频率------------*/</li>
+          <li>#define B0  31<br>
+            #define C1  33<br>
+            #define CS1 35<br>
+            #define D1  37<br>
+            #define DS1 39<br>
+            #define E1  41<br>
+            #define F1  44<br>
+            #define FS1 46<br>
+            #define G1  49<br>
+            #define GS1 52<br>
+            #define A1  55<br>
+            #define AS1 58<br>
+            #define B1  62<br>
+            #define C2  65<br>
+            #define CS2 69<br>
+            #define D2  73<br>
+            #define DS2 78<br>
+            #define E2  82<br>
+            #define F2  87<br>
+            #define FS2 93<br>
+            #define G2  98<br>
+            #define GS2 104<br>
+            #define A2  110<br>
+            #define AS2 117<br>
+            #define B2  123<br>
+            #define C3  131<br>
+            #define CS3 139<br>
+            #define D3  147<br>
+            #define DS3 156<br>
+            #define E3  165<br>
+            #define F3  175<br>
+            #define FS3 185<br>
+            #define G3  196<br>
+            #define GS3 208<br>
+            #define A3  220<br>
+            #define AS3 233<br>
+            #define B3  247<br>
+            #define C4  262<br>
+            #define CS4 277<br>
+            #define D4  294<br>
+            #define DS4 311<br>
+            #define E4  330<br>
+            #define F4  349<br>
+            #define FS4 370<br>
+            #define G4  392<br>
+            #define GS4 415<br>
+            #define A4  440<br>
+            #define AS4 466<br>
+            #define B4  494<br>
+            #define C5  523<br>
+            #define CS5 554<br>
+            #define D5  587<br>
+            #define DS5 622<br>
+            #define E5  659<br>
+            #define F5  698<br>
+            #define FS5 740<br>
+            #define G5  784<br>
+            #define GS5 831<br>
+            #define A5  880<br>
+            #define AS5 932<br>
+            #define B5  988<br>
+            #define C6  1047<br>
+            #define CS6 1109<br>
+            #define D6  1175<br>
+            #define DS6 1245<br>
+            #define E6  1319<br>
+            #define F6  1397<br>
+            #define FS6 1480<br>
+            #define G6  1568<br>
+            #define GS6 1661<br>
+            #define A6  1760<br>
+            #define AS6 1865<br>
+            #define B6  1976<br>
+            #define C7  2093<br>
+            #define CS7 2217<br>
+            #define D7  2349<br>
+            #define DS7 2489<br>
+            #define E7  2637<br>
+            #define F7  2794<br>
+            #define FS7 2960<br>
+            #define G7  3136<br>
+            #define GS7 3322<br>
+            #define A7  3520<br>
+            #define AS7 3729<br>
+            #define B7  3951<br>
+            #define C8  4186<br>
+            #define CS8 4435<br>
+            #define D8  4699<br>
+            #define DS8 4978</li>
+          <li>#define buzzer_pin 8 //定义蜂鸣器引脚</li>
+          <li>/*------------定义歌曲音调的数组------------*/</li>
+          <li>int notes[] = {<br>
+            E5, E5, E5, F5, G5,<br>
+            E5, D5, D5,<br>
+            C5,C5,C5,D5,E5,<br>
+            E5,B4,B4,<br>
+            A4,E5,D5,<br>
+            A4,E5,D5,<br>
+            A4,E5,D5,C5,<br>
+            C5,<br>
+            0,0,0,E5,D5,<br>
+            G5,F5,E5,<br>
+            E5,D5,D5,G5,F5,<br>
+            E5,F5,G5,E5,<br>
+            D5,0,C5,<br>
+            A4,E5,D5,C5,<br>
+            G5,D5,C5,C5,<br>
+            F5,E5,F5,E5,C5,<br>
+            F5,E5,F5,E5,C5,D5,<br>
+            C5,<br>
+            0,0,0,0,<br>
+            };</li>
+          <li>/*------------定义歌曲节奏的数组------------*/</li>
+          <li>byte beats[] = {<br>
+            200,100,100,200,200,<br>
+            200,100,400,<br>
+            200,100,100,200,200,<br>
+            300,100,400,<br>
+            200,200,400,<br>
+            200,200,400,<br>
+            200,200,300,100,<br>
+            800,<br>
+            200,200,200,100,100,<br>
+            600,100,100,<br>
+            100,100,400,100,100,<br>
+            200,100,200,200,<br>
+            600,100,100,<br>
+            200,200,200,100,<br>
+            200,100,100,400,<br>
+            100,100,100,100,400,<br>
+            100,100,100,100,200,100,<br>
+            800,<br>
+            200,200,200,200,<br>
+            };</li>
+          <li>void setup() {<br>
+            pinMode(buzzer_pin, OUTPUT); //定义蜂鸣器引脚为输出状态<br>
+            }</li>
+          <li>void loop() {<br>
+            for ( int i = 0; i &lt; 61; i++) {</li>
+          <li>/*------------设置i在歌曲长度内递增，这样就能逐一执行数组中的数据------------*/</li>
+          <li> tone(buzzer_pin, notes[i]); //播放音乐<br>
+            delay(beats[i]*3); //播放间隔</li>
+          <li> noTone(buzzer_pin);<br>
+            delay(50);<br>
+            }<br>
+            }</li>
+        <li></li></ol></th>
     </tr>
   </tbody>
 </table>
